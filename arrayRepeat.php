@@ -13,7 +13,7 @@ function array_repeat_elements(Array $array)
         $count = 0;
         if (!in_array($item, $processed)) {
             $total = count($array);
-            for ($j = 0; $j < count($array); $j++) {
+            for ($j = 0; $j < $total; $j++) {
                 if ($array[$j] == $item) {
                     $count++;
                 }
