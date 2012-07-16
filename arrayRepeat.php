@@ -9,9 +9,9 @@ function array_repeat_elements(Array $array)
     $processed = array();
     $result = array();
     for ($i = 0; $i < $total; $i++) {
-        $item = array_shift($array);
-        $count = 0;
+        $item = array_shift($array); 
         if (!in_array($item, $processed)) {
+             $count = 0;
             $total = count($array);
             for ($j = 0; $j < $total; $j++) {
                 if ($array[$j] == $item) {
